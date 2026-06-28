@@ -1,0 +1,6 @@
+{
+  "name": "Cuts & Plugs",
+  "description": "A premium barbershop and cannabis dispensary.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

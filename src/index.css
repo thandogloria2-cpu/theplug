@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Oswald:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Permanent+Marker&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Oswald", ui-sans-serif, system-ui, sans-serif;
+  --font-grotesk: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-graffiti: "Permanent Marker", cursive;
+  --color-brand-olive: #727a51;
+  --color-brand-olive-dark: #5c623f;
+  --color-brand-neon: #39FF14;
+  --color-brand-neon-dark: #2CCC0E;
+  --color-brand-dark: #0a0a0a;
+  --color-brand-darker: #050505;
+}
+
+.swiper-pagination-bullet {
+  @apply !bg-zinc-600 !w-3 !h-3 !opacity-100 transition-all;
+}
+.swiper-pagination-bullet-active {
+  @apply !bg-brand-neon !w-8 !rounded-full;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body {
+  background-color: var(--color-brand-dark);
+  color: #f3f4f6;
+  -webkit-font-smoothing: antialiased;
+}
